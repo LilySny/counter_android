@@ -9,20 +9,23 @@
     <com.google.android.material.appbar.AppBarLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:theme="@style/Theme.Counter_android.AppBarOverlay">
+        >
 
-    </com.google.android.material.appbar.AppBarLayout>
 
-<!--    <include layout="@layout/content_main" />-->
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="72dp"
+            />
+
+        </com.google.android.material.appbar.AppBarLayout>
 
     <TextView
         android:id="@+id/counter_value"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/counter_value"
         android:layout_gravity="center|center_vertical"
-
-        />
+        android:text="@string/counter_value" />
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/add_fab"
@@ -31,7 +34,8 @@
         android:layout_gravity="bottom|start"
         android:layout_marginStart="@dimen/fab_margin"
         android:layout_marginBottom="16dp"
-        app:srcCompat="@android:drawable/ic_input_add" />
+        app:srcCompat="@android:drawable/ic_input_add"
+        android:contentDescription="@string/todo" />
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/remove_fab"
@@ -40,6 +44,7 @@
         android:layout_gravity="bottom|end"
         android:layout_marginEnd="@dimen/fab_margin"
         android:layout_marginBottom="16dp"
-        app:srcCompat="@android:drawable/ic_delete" />
+        app:srcCompat="@android:drawable/ic_delete"
+        android:contentDescription="@string/todo" />
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>
