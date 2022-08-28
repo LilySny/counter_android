@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">counter_android</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">Counter</string>
+    <string name="counter_value">0</string>
+
+
+</resources>
